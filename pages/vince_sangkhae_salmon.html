@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vince Sangkhae Recipe</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="https://d3c5s1hmka2e2b.cloudfront.net/uploads/topic/image/4/appacademy.png" alt="App Academy Logo">
+      <nav>
+        <ul>
+          <li><a href="#Description">Description</a></li>
+          <li><a href="#Ingredients">Ingredients</a></li>
+          <li><a href="#Directions">Directions</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h1>Oven Baked Honey Salmon</h1>
+
+      <figure>
+        <img src="http://damndelicious.net/wp-content/uploads/2014/12/IMG_4738edit.jpg" />
+        <figcaption>
+          <a href="https://en.wikipedia.org/wiki/Salmon_as_food"> More cultural information on salmon and nutritional facts.</a>
+        </figcaption>
+      </figure>
+
+      <h2>Description</h2>
+      <a name="Description"></a>
+      <p>
+        Atlantic salmon marinated and oven baked in an Asian-inspired soy honey sauce.
+      </p>
+
+      <h2>Directions</h2>
+      <a name="Directions"></a>
+      <ol>
+        <li>Preheat oven to 375 degrees F. Line a baking sheet with foil.</li>
+        <li>In a small bowl, whisk together honey, garlic, soy sauce, rice vinegar, sesame oil, ginger, Sriracha and pepper, to taste.</li>
+        <li>Place salmon onto the prepared baking sheet and fold up all 4 sides of the foil. Spoon the honey mixture over the salmon. Fold the sides of the foil over the salmon, covering completely and sealing the packet closed.</li>
+        <li>Place into oven and bake until cooked through, about 15-20 minutes.* Open the packet and broil for 2-3 minutes, or until caramelized and slightly charred.</li>
+        <li>Serve immediately, garnished with green onions and sesame seeds, if desired.</li>
+      </ol>
+    </section>
+
+    <aside>
+      <h2>Ingredients</h2>
+      <a name="Ingredients"></a>
+      <ul>
+        <li>1/4 cup honey</li>
+        <li>3 cloves garlic</li>
+        <li>2 tbsp soy sauce</li>
+        <li>1 tbsp rice vinegar</li>
+        <li>1 tbsp seasame oil</li>
+        <li>1 tbsp grated ginger</li>
+        <li>1 tsp Sriracha</li>
+        <li>2 lbs salmon</li>
+        <li>2 green onions</li>
+        <li>1/2 tsp sesame seeds</li>
+      </ul>
+    </aside>
+
+    <section>
+      <form action="/reviews" method="post">
+        <label for="reviewer_name">Name</label>
+        <input type="text" name="reviewer[name]" id="reviewer_name">
+
+        <label for="reviewer_rating">Rating</label>
+        1<input type="radio" name="reviewer[rating]" value="1" checked="checked">
+        2<input type="radio" name="reviewer[rating]" value="2">
+        3<input type="radio" name="reviewer[rating]" value="3">
+        4<input type="radio" name="reviewer[rating]" value="4">
+        5<input type="radio" name="reviewer[rating]" value="5">
+
+        <select id="reviewer_expertise" name="expertise">
+          <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Experise</option>
+          <option value="Sometimes Cook">Sometimes Cook</option>
+          <option value="Cook Everyday">Cook Everyday</option>
+          <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+          <option value="Professional Chef">Professional Chef</option>
+        </select>
+
+        <label>Review
+          <textarea name="review" cols="30" rows="5"></textarea>
+        </label>
+
+        <input type="submit" value="Submit Review">
+
+      </form>
+    </section>
+
+    <footer>
+      <p>Original Recipe by <a href="http://damndelicious.net/2014/12/19/asian-salmon-foil/">Damn Delicious</a></p>
+    </footer>
+  </body>
+</html>
