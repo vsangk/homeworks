@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title>Vince Sangkhae Recipe</title>
+    <meta name="description" content="The best, simple, cheap, healthy recipe for delicious Salmon, an oven baked recipe with an Asian inspired honey soy sesame sauce. ">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/Users/vsangk/Desktop/homeworks/pages/assets/css_reset.css" type="text/css"/>
+    <link rel="stylesheet" href="/Users/vsangk/Desktop/homeworks/pages/assets/css_syntax.css" type="text/css"/>
+    <script src="/Users/vsangk/Desktop/homeworks/pages/assets/review.js" type="text/javascript"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-12345678-9', 'auto');
+      ga('send', 'pageview');
+    </script>
   </head>
 
   <body>
@@ -47,7 +59,7 @@
     <aside>
       <h2>Ingredients</h2>
       <a name="Ingredients"></a>
-      <ul>
+      <ul class="ingredients-list">
         <li>1/4 cup honey</li>
         <li>3 cloves garlic</li>
         <li>2 tbsp soy sauce</li>
@@ -61,19 +73,20 @@
       </ul>
     </aside>
 
-    <section>
-      <form action="/reviews" method="post">
-        <label for="reviewer_name">Name</label>
-        <input type="text" name="reviewer[name]" id="reviewer_name">
+    <section id="reviews">
+      <h2>Review</h2>
+      <form id="review-form" action="/reviews" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
 
-        <label for="reviewer_rating">Rating</label>
+        <label for="rating">Rating</label>
         1<input type="radio" name="reviewer[rating]" value="1" checked="checked">
         2<input type="radio" name="reviewer[rating]" value="2">
         3<input type="radio" name="reviewer[rating]" value="3">
         4<input type="radio" name="reviewer[rating]" value="4">
         5<input type="radio" name="reviewer[rating]" value="5">
 
-        <select id="reviewer_expertise" name="expertise">
+        <select id="expertise" name="expertise">
           <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Experise</option>
           <option value="Sometimes Cook">Sometimes Cook</option>
           <option value="Cook Everyday">Cook Everyday</option>
